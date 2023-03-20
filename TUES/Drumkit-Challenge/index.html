@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drum Kit Challenge</title>
+    <link rel="styleSheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <section class="main-wrapper">
+          <div class="key-map-wrapper">
+            <h2>Key Mapping</h2>
+            <ul class="key-map-list">
+              <li>
+                <kbd class="key-code">Q</kbd>
+                <span class="key-sound">Crash</span>
+              </li>
+              <li>
+                <kbd class="key-code">W</kbd>
+                <span class="key-sound">Ride</span>
+              </li>
+              <li>
+                <kbd class="key-code">E</kbd>
+                <span class="key-sound">Floor tom</span>
+              </li>
+              <li>
+                <kbd class="key-code">R</kbd>
+                <span class="key-sound">Mid tom</span>
+              </li>
+              <li>
+                <kbd class="key-code">T</kbd>
+                <span class="key-sound">High tom</span>
+              </li>
+              <li>
+                <kbd class="key-code">Y</kbd>
+                <kbd class="key-code">U</kbd>
+                <span class="key-sound">Kick</span>
+              </li>
+              <li>
+                <kbd class="key-code">I</kbd>
+                <span class="key-sound">Snare</span>
+              </li>
+              <li>
+                <kbd class="key-code">O</kbd>
+                <span class="key-sound">Hi-Hat Open</span>
+              </li>
+              <li>
+                <kbd class="key-code">P</kbd>
+                <span class="key-sound">Hi-Hat Closed</span>
+              </li>
+            </ul>
+          </div>
+          <h1 class="main-title">DRUM KIT</h1>
+          <div class="drum-kit-wrapper">
+            <img id="crash-ride" class="crash-cymbal" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/img/crash.png" alt="Crash cymbal">
+            <img id="hihat-top" class="hihat-top-cymbal" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/img/hihat-top.png" alt="Hi Hat cymbal">
+            <div data-key="81" class="key snare">
+              <kbd>Q</kbd>
+            </div>
+            <div data-key="87" class="key kick">
+              <kbd>W</kbd>
+            </div>
+            <div data-key="69" class="key kick2">
+              <kbd>E</kbd>
+            </div>
+            <div data-key="82" class="key tom-high">
+              <kbd>R</kbd>
+            </div>
+            <div data-key="84" class="key tom-mid">
+              <kbd>T</kbd>
+            </div>
+            <div data-key="89" class="key tom-low">
+              <kbd>Y</kbd>
+            </div>
+            <div data-key="85" class="key crash">
+              <kbd>U</kbd>
+            </div>
+            <div data-key="73" class="key ride">
+              <kbd>I</kbd>
+            </div>
+            <div data-key="79" class="key hihat-open">
+              <kbd>O</kbd>
+            </div>
+            <div data-key="80" class="key hihat-close">
+              <kbd>P</kbd>
+            </div>
+            <img class="drum-kit" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/img/drum-kit.png" alt="Drum Kit" />
+          </div>
+        </section>
+      </main>
+      <audio data-key="81" src="./SOUNDS/snare.wav"></audio>
+      <audio data-key="87" src="./SOUNDS/kick.wav"></audio>
+      <audio data-key="69" src="./SOUNDS/boom.wav"></audio>
+      <audio data-key="82" src="./SOUNDS/tom.wav"></audio>
+      <audio data-key="84" src="./SOUNDS/clap.wav"></audio>
+      <audio data-key="89" src="./SOUNDS/tink.wav"></audio>
+      <audio data-key="85" src="./SOUNDS/openhat.wav"></audio>
+      <audio data-key="73" src="./SOUNDS/ride.wav"></audio>
+      <audio data-key="79" src="./SOUNDS/hihat.wav"></audio>
+      <audio data-key="80" src="./SOUNDS/hihat.wav"></audio>
+    <script src="./app.js"></script>
+</body>
+</html>

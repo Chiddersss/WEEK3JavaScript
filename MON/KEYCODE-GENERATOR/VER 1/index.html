@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keycode Generator</title>
+    </title>
+    <link rel='styleSheet' type="text/css" media="screen" href="./style.css">
+</head>
+<body id="bodyWrapper" onkeydown="keycode(event)">
+        <!-- <div class="container"> -->
+            <h2 id="WelcomeScreen">Welcome to KeyCode Generator</h2>
+        <div id="generator" class="show"></div>
+            <h4 id="generator">To get started press any key!</h4>
+
+            <h2 id="keycode"></h2>
+            <div id="wrapper">
+            <div class="container">
+                <div class="box">
+                    <p>event.key</p>
+                    <h3 id="eventKey"></h3>
+                </div>
+
+                <div class="box">
+                    <p>event.location</p>
+                    <h3 id="eventLocation"></h3>
+                </div>
+
+                <div class="box">
+                    <p>event.which</p>
+                    <h3 id="eventWhich"></h3>
+                </div>
+
+                <div class="box">
+                    <p>event.Code</p>
+                    <h3 id="eventCode"></h3>
+                </div>
+
+                <div class="pressedKey">
+                    <h2>Pressed Key</h2>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
+f
